@@ -1,0 +1,39 @@
+[
+
+    {
+        "id": 1,
+         "title": "WordPress",
+         "img_url": "/assets/img/projects/cohesia.png",
+         "project_URL": "https://cohesia.ca/"
+    },
+    {
+        "id": 2,
+         "title": "WordPress",
+         "img_url": "/assets/img/projects/appgulo.png",
+         "project_URL": "https://appglue.com/"
+    },
+    {
+        "id": 3,
+         "title": "Webflow",
+         "img_url": "../assets/img/projects/wddiflow.png",
+         "project_URL": "https://weddiflow.webflow.io/"
+    },
+    {
+        "id": 4,
+         "title": "WordPress",
+         "img_url": "../assets/img/projects/onbranding.png",
+         "project_URL": "https://onboarding.nbse.ca/"
+    },
+    {
+        "id": 5,
+         "title": "WordPress",
+         "img_url": "../assets/img/projects/boutche.png",
+         "project_URL": "https://villedebouctouche.ca/fr/"
+    },
+    {
+        "id": 6,
+         "title": "WordPress",
+         "img_url": "../assets/img/projects/firstresponse.png",
+         "project_URL": "https://firstresponse.to/"
+    }
+]

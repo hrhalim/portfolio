@@ -1,0 +1,10 @@
+.sec-border-sm:before {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 2px;
+    height: 100%;
+    content: "";
+    background-color: #555151;
+    
+}

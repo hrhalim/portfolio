@@ -1,0 +1,62 @@
+.project-item:hover img {
+    transform: scale(1.2);
+}
+
+.project-item {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+ 
+.project-item img {
+    transition: all 0.5s;
+}
+
+.projct-img {
+    position: relative;
+}
+
+.projct-img:hover:before {
+    opacity: 0.7;
+}
+
+.project-content {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 99;
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.project-item:hover .project-content {
+    opacity: 1;
+    top: 35%;
+}
+
+.project-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: "";
+    z-index: 9;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.project-item:hover:before {
+    opacity: 0.7;
+}
+
+.btn-view {
+    width: 100px;
+    height: 100px;
+    background: #131313;
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 15px;
+}

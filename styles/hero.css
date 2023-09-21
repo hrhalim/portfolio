@@ -1,0 +1,218 @@
+.hero__area {
+    background-image: url(../public/assets/img/bg/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -75px;
+}
+
+.hero__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    gap: 15px;
+}
+
+.hero__content img {
+    filter: brightness(0) invert(1);
+}
+.hero__text-left {
+    padding-left: 106px;
+    position: relative;
+}
+.hero__text-left:before {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 81px;
+    height: 3px;
+    background: #fff;
+    content: "";
+}
+.hero__content p {
+    text-indent: 50px;
+    padding-top: 50px;
+}
+
+.hero__btm {
+    background: #232323;
+    width: 540px;
+    height: 144px;
+    position: absolute;
+    right: 10%;
+    padding: 30px;
+    bottom: 0%;
+    top: 0;
+}
+
+
+.hero__img {
+    transform: translate(-63px, 135px);
+}
+.hero__content img {
+    margin: 0 auto; 
+}
+.hero__btm-wrapper {
+    position: relative;
+}
+
+.hero__btm ul li a {
+    color: white;
+    border: 1px solid #fff;
+    padding: 6px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.hero__btm ul li a:hover {
+    background: #ffbf00;
+    border: 1px solid transparent;
+}
+
+.hero__arrow-icon svg {
+    font-size: 28px;
+    color: #fff;
+}
+
+.hero__arrow-icon {
+    border: 1px solid #fff;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+}
+
+.hero__content span {
+    position: absolute;
+    top: 15%;
+    left: 46%;
+}
+
+.hero__content span svg {
+    color: #fff;
+    font-size: 32px;
+    transform: rotate(220deg);
+}
+.hero__content img {
+    width: 65%;
+}
+
+
+.rotate {
+    animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% { 
+      transform: translatey(0px);
+    }
+    50% { 
+      transform: translatey(-20px);
+    }
+    100% { 
+      transform: translatey(0px);
+    }
+  }
+
+  .move { 
+    animation: float 4s ease-in-out infinite; 
+  }
+
+/* Responisve  */
+@media only screen and (max-width: 767px) {
+    .hero__area { 
+        padding-top: 70px;
+    }
+    .hero__wrapper { 
+        grid-template-columns: 1fr; 
+    }
+    .hero__btm { 
+        width: 100%;
+        position: unset; 
+        bottom: 0;
+        height: auto;
+        margin-top: 40px;
+    }
+    .hero__img {
+        transform: translate(-0px, -0);
+    }
+    .content-box-left {
+        padding-top: 30px; 
+    }
+    .line-border { 
+        display: none;
+    }
+    .contact-small { 
+        left: 0%;
+        top: 4%; 
+    }
+    .hero__text-left:before { 
+        top: 22px; 
+    }
+    .hero__content span { 
+        top: 25%; 
+    } 
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) { 
+    .hero__wrapper { 
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .hero__content img {
+        width: 35%;
+    }
+    .hero__arrow-icon { 
+        bottom: 6%;
+    }
+
+}
+
+
+
+
+
+
+
+/* header  */
+.header__menu ul li a {
+    padding: 0px 15px;
+    position: relative;
+    transition: all 0.5s;
+    display: inline-block;
+}
+.header__menu ul li a:hover {
+     color: #ffbf00;
+}
+
+.header__menu ul li a:before {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 0;
+    right: 0;
+    height: 2px;
+    content: "";
+    background: #ffbf00;
+    transition: all 0.5s;
+}
+
+.header__menu ul li a:hover:before {
+    width: 100%;
+}
