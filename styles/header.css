@@ -8,3 +8,30 @@
     background-color: #555151;
     
 }
+
+/* header  */
+.header__menu ul li a {
+    padding: 0px 15px;
+    position: relative;
+    transition: all 0.5s;
+    display: inline-block;
+}
+.header__menu ul li a:hover {
+     color: #ffbf00;
+}
+
+.header__menu ul li a:before {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 0;
+    right: 0;
+    height: 2px;
+    content: "";
+    background: #ffbf00;
+    transition: all 0.5s;
+}
+
+.header__menu ul li a:hover:before {
+    width: 100%;
+}

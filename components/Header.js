@@ -1,18 +1,21 @@
+"use client"
 import Link from 'next/link';
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import { BiMenu } from "react-icons/bi";
 import style from '../styles/header.css';
 import styles from '../styles/offcanvas.css';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
-const Header = () => {
+const Header = () => { 
+ 
+
     return (
         <>
          <header className='py-7 border-b-2 border-[#555151] relative sec-border-sm'>
             <div className='container'>
                <div className='flex justify-between'>
                     <div className='header_logo'>
-                        <h1>Halim</h1>
+                    <Link href="/">Halim</Link>
                     </div>
                     <div className='header__menu flex justify-between items-center md:gap-10'>
                         <ul className='flex justify-center gap-3 text-white'> 

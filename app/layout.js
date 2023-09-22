@@ -1,13 +1,10 @@
 import Header from '@/components/Header'
 import './globals.css'
-// import { Inter } from 'next/font/google'
-
-// const inter = Inter({ subsets: ['latin'] })
-
-import { Roboto } from 'next/font/google'
+import { Kanit } from 'next/font/google'
 import Footer from '@/components/Footer'
+import { AOSInit } from '@/components/aos'
  
-const roboto = Roboto({
+const roboto = Kanit({
   weight: '400',
   subsets: ['latin'],
 })
@@ -21,6 +18,7 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en"> 
+    <AOSInit/>
       <body className={roboto.className}>
         <Header></Header>
         {children}
