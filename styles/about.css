@@ -52,7 +52,21 @@
     height: 130px;
     background: #555151;
 }
+.about-icon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
 
+.about-border:before {
+    position: absolute;
+    top: 58%;
+    left: 0%;
+    width: 55%;
+    height: 2px;
+    content: "";
+    background-color: #555;
+}
 
 /* Responisve  */
 @media only screen and (max-width: 767px) {  
@@ -62,6 +76,9 @@
     }
     .content-box-right {
         padding-top: 0px; 
+    }
+    .about-icon {  
+        top: 2%; 
     }
 
 }

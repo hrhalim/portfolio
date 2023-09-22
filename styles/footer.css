@@ -8,3 +8,39 @@
     background-color: #555151;
     
 }
+.footer-icon {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+}
+  
+.footer-icon-left {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+}
+  
+
+.footer-icon, .footer-icon-left {
+    animation: rotation 6s infinite linear;
+}
+  
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+
+/* Responisve  */
+@media only screen and (max-width: 767px) {  
+
+    .footer-icon-left {
+        position: absolute;
+        top: 24%; 
+    }
+
+}

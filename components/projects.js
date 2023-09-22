@@ -21,8 +21,9 @@ const Projects = () => {
         if (!projects) return <p>No Data</p> 
   
     return (
-        <section className='projects-area py-11 md:py-28  bg-[#131313] border-b-2 border-[#555151]' id='portfollio'>
+        <section className='projects-area relative py-11 md:py-28  bg-[#131313] border-b-2 border-[#555151]' id='portfollio'>
              <div className="container-xl">
+             <span className='small-text'>Projects</span>
              <div className='pb-7 lg:w-2/3 text-center m-auto block'>
                     <h2 className='text-5xl lg:text-7xl text-white font-semibold pb-4'>Latest Projects</h2>
                    <div className='grid md:grid-cols-2 gap-5'> 

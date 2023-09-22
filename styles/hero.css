@@ -102,21 +102,22 @@
     width: 65%;
 }
 
+/* CSS Animation  */
 
 .rotate {
     animation: rotation 6s infinite linear;
-}
-
-@keyframes rotation {
+  }
+  
+  @keyframes rotation {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
-}
-
-@keyframes float {
+  }
+  
+  @keyframes float {
     0% { 
       transform: translatey(0px);
     }
@@ -127,10 +128,11 @@
       transform: translatey(0px);
     }
   }
-
-  .move { 
+  
+  .move, .about-icon { 
     animation: float 4s ease-in-out infinite; 
   }
+
 
 /* Responisve  */
 @media only screen and (max-width: 767px) {

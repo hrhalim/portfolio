@@ -7,18 +7,21 @@ import 'swiper/css';
 
 const OurSkill = () => {
     return (
-        <section className='skills-area py-11 md:py-28 border-t-2 border-[#555151]' id='skill'> 
-           <div className='pb-7 lg:w-2/3 text-center m-auto block pl-3'> 
-                    <h2 className='text-5xl lg:text-7xl text-white font-semibold pb-4'>Our Skills</h2>
-                   <div className='grid md:grid-cols-2 gap-5'> 
-                        <div>
-                            <p className='content-box-left'>My web design skills emphasize engaging layouts and intuitive user interfaces that align with clients' brand identities. <br /> I deliver high-quality, aesthetically pleasing, and functional web solutions.</p>
-                        </div>
-                            <div className='flex items-centr justify-start'>
-                                <div className='line-border'></div>
-                            </div>  
-                   </div>
-                </div>  
+        <section className='skills-area py-11 relative md:py-28 border-t-2 border-[#555151]' id='skill'> 
+            <div className="container">
+            <span className='small-text'>Skills</span>
+            <div className='pb-7 lg:w-2/3 text-center m-auto block pl-3'>  
+                        <h2 className='text-5xl lg:text-7xl text-white font-semibold pb-4'>Our Skills</h2>
+                    <div className='grid md:grid-cols-2 gap-5'> 
+                            <div>
+                                <p className='content-box-left'>My web design skills emphasize engaging layouts and intuitive user interfaces that align with clients' brand identities. <br /> I deliver high-quality, aesthetically pleasing, and functional web solutions.</p>
+                            </div>
+                                <div className='flex items-centr justify-start'>
+                                    <div className='line-border'></div>
+                                </div>  
+                    </div>
+                    </div>  
+            </div>
 
           <div className='pt-10'>
             <Swiper
