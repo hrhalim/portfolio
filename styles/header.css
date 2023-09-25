@@ -10,6 +10,9 @@
 }
 
 /* header  */
+.header-area {
+    margin-bottom: -130px;
+}
 .header__menu ul li a {
     padding: 0px 15px;
     position: relative;
@@ -35,3 +38,27 @@
 .header__menu ul li a:hover:before {
     width: 100%;
 }
+
+.header_logo, .mobile-logo img {
+    filter: brightness(0) invert(1);
+}
+
+.header_logo, .mobile-logo a img {
+    width: 100px;
+}
+
+/* Responisve  */
+@media only screen and (max-width: 767px) {
+
+    .sec-border-sm:before { 
+        left: 45%; 
+    } 
+}
+
+@media only screen and (max-width: 1024px){ 
+    .sm-none {
+        display: none;
+    }
+
+}
+

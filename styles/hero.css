@@ -1,8 +1,7 @@
 .hero__area {
     background-image: url(../public/assets/img/bg/hero-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -75px;
+    background-size: cover; 
 }
 
 .hero__wrapper {
@@ -137,7 +136,7 @@
 /* Responisve  */
 @media only screen and (max-width: 767px) {
     .hero__area { 
-        padding-top: 70px;
+        padding-top: 110px;
     }
     .hero__wrapper { 
         grid-template-columns: 1fr; 
@@ -166,7 +165,7 @@
         top: 22px; 
     }
     .hero__content span { 
-        top: 25%; 
+        top: 40%; 
     } 
 
 }
@@ -185,3 +184,17 @@
     }
 
 }
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) { 
+    .hero__btm { 
+        right: 25%;
+        padding: 30px;
+        bottom: -10%;
+        top: -101px;
+    }
+    .hero__arrow-icon { 
+        bottom: 3%;
+    }
+
+}
+

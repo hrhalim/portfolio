@@ -9,7 +9,7 @@ import Typed from "react-typed"
 
 const Hero = () => {
     return (
-        <section className='hero__area py-12 md:py-40 lg:h-screen'>
+        <section className='hero__area pb-12 md:py-40 lg:h-screen'>
             <div className='container'>
                 <div className='hero__wrapper'>  
                     <div>

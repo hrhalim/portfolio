@@ -1,40 +1,56 @@
 "use client"
 import Link from 'next/link';
+import Image from 'next/image'
 import React, { useState } from 'react'; 
 import { BiMenu } from "react-icons/bi";
 import style from '../styles/header.css';
 import styles from '../styles/offcanvas.css';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import logo from '../public/assets/img/logo/grapxstudio.png'
 
-const Header = () => { 
- 
+const Header = () => {  
+
+    const [visible, setVisible] = useState(false);
 
     return (
-        <>
-         <header className='py-7 border-b-2 border-[#555151] relative sec-border-sm'>
+        <> 
+         <header className='header-area py-7 border-b-2 border-[#555151] relative sec-border-sm'>
             <div className='container'>
                <div className='flex justify-between'>
                     <div className='header_logo'>
-                    <Link href="/">Halim</Link>
+                    <Link href="/">
+                        <Image
+                            src={logo}
+                            alt="Logo" 
+                        />
+                     </Link>
+                        
                     </div>
                     <div className='header__menu flex justify-between items-center md:gap-10'>
-                        <ul className='flex justify-center gap-3 text-white'> 
+                        <ul className='flex justify-center gap-3 text-white sm-none'> 
                             <li><Link href="#about">About</Link> </li>
                             <li><Link href="#service">Service</Link> </li>
                             <li><Link href="#skill">Skills</Link> </li>
                             <li><Link href="#portfollio">Portfollio</Link> </li>
                             <li><Link href="#contact">Contact</Link> </li> 
                         </ul> 
-                        <span className='text-white text-3xl cursor-pointer'><BiMenu></BiMenu></span>
+                        <span onClick={() => setVisible(true)} className='text-white text-3xl cursor-pointer'><BiMenu></BiMenu></span>
                     </div> 
                </div> 
             </div>           
         </header>
-        <div className='offcanvas hidden'> 
-            <span className='offcanvas-close cursor-pointer'>x</span>
+        <div> 
+        </div>
+        {visible && <div className='offcanvas'> 
+            <span onClick={() => setVisible(false)} className='offcanvas-close cursor-pointer'>x</span>
             <div className="offcanvas-wrapper">
-                <div>
-                    <Link href="/">Halim</Link>
+                <div className='mobile-logo'>
+                <Link href="/">
+                        <Image
+                            src={logo}
+                            alt="Logo" 
+                        />
+                     </Link>
                 </div>
                 <div>
                     <ul className='text-white text-left py-10'> 
@@ -55,7 +71,9 @@ const Header = () => {
                     </ul> 
                  </div> 
             </div> 
-        </div>  
+        </div>}
+          
+
         </> 
         
     );
